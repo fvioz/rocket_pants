@@ -1,4 +1,5 @@
 require 'rocket_pants/errors'
+require "action_controller/railtie"
 require 'rails-api'
 
 module RocketPants
