@@ -26,7 +26,7 @@ module RocketPants
     end
 
     def self.invalid?(object)
-      object.respond_to?(:errors) && object.errors.present?
+      object.respond_to?(:errors) && !object.try(:errors).blank?
     end
 
     def self.paginated?(object)
